@@ -79,6 +79,7 @@ anaconda-install-env-deps
 anaconda-live
 chromium
 dracut-live
+nodejs
 -gimp
 -gnucash
 -duplicity
@@ -150,9 +151,23 @@ curl 'https://raw.githubusercontent.com/AFSR/kickstart-fedora-afsr/master/afsr_p
 
 #GazePlay Installation
 cd ~/
-git clone --branch AFSR-master https://github.com/AFSR/GazePlay-AFSR.git GazePlay-AFSR
+git clone https://github.com/AFSR/GazePlay-AFSR.git GazePlay-AFSR
 cd ~/GazePlay-AFSR
 ./gradlew release
+
+#InterAACtionScene Installation
+cd ~/
+git clone https://github.com/AFSR/InteraactionScene-AFSR.git InteraactionScene-AFSR
+cd ~/InteraactionScene-AFSR
+npm install -g @angular/cli
+npm install --save-dev @angular-devkit/build-angular
+ng build
+
+#AugCom Installation
+cd ~/
+git clone https://github.com/AFSR/AugCom-AFSR.git AugCom-AFSR
+cd ~/AugCom-AFSR
+ng build
 
 %end
 
