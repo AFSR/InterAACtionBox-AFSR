@@ -8,8 +8,8 @@ Part of the InterAACtionBox project.
 
 ### Use
 * Clone and enter this repository with:
-  * `git clone https://github.com/AFSR/kickstart-fedora-afsr`.
-  * `cd kickstart-fedora-afsr`.
+  * `git clone https://github.com/AFSR/InterAACtionBox-AFSR`.
+  * `cd InterAACtionBox-AFSR`.
   
 * Rum livemedia-creator with:
   * `sudo livemedia-creator --ks InterAACtionBox.ks --logfile /tmp/lmc-logs/livemedia-out.log --no-virt --resultdir /tmp/lmc --project InterAACtionBox-AFSR --make-iso --volid InterAACtionBox-AFSR --iso-only --isoname InterAACtionBox-AFSR-live.iso --releasever 24 --image-name InterAACtionBox-AFSR-live --macboot`
